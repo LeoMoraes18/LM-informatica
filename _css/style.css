@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+
+header {
+    background-image: -webkit-linear-gradient(#2f00ff80 25%, #ffffff93);
+    justify-content: space-between;
+    max-width: 100vw;
+    min-height: 8vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+main{
+    width: 100vw;
+    min-height: 82vh;
+    padding: 0;
+    margin: 0;
+}
+.container {
+    max-width: 80vw;
+    margin: auto auto;
+    display: flex;
+}
+
+.container > p {
+    text-align: justify;
+    padding: 20px;
+    font-size: 20px;
+}
+
+header nav ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    padding: 10px;
+}
+
+header nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 16px;
+    font-size: 1.2rem;
+}
+
+header nav a:hover {
+    background-color: rgb(9, 3, 97);
+    color: white;
+}
+.active {
+    background-color: rgb(9, 3, 97);
+    color: white;
+}
+
+.banner {
+    background-image: url(../_midias/manuten-o-notebook-capa-1-.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    background-size: 100% 100%;
+}
+
+header > img {
+    height: 100px;
+}
+ div {
+    background-color: rgba(187, 187, 228, 0.26);
+ }
+footer {
+    width: 90vw;
+    background-image: -webkit-linear-gradient( #ffffff93 25%,#2f00ff80);
+    height: 20vh;
+    
+    color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+}
