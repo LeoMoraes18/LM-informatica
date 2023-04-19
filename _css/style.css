@@ -275,3 +275,95 @@ footer p {
 }
 
 /* Path: _css\style.css */
+
+@media screen and (max-width:800px) {
+    nav ul {
+        flex-direction: column;
+        height: 30vh;
+        width: 100vw;
+        background-color: #000000a2;
+    }
+    nav ul a {
+        color: #ffffff;
+        text-decoration: none;
+        padding: 10px;
+        font-size: 17px;
+    }
+    nav ul a:hover {
+        background-color: #000000a2;
+        color: #ffffff;
+        border-radius: 5px;
+    }
+    .active {
+        background-color: #000000a2;
+        color: #ffffff;
+        border-radius: 5px;
+    }
+    nav a img {
+        margin: 0 auto;
+        display: block;
+        max-width: 50vw;
+    }
+    .img-inline-start{
+        max-width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        float: inline-start;
+        width: 100vw;
+        padding: 20px;
+    }
+    .img-right {
+        max-width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        float: right;
+        width: 100vw;
+        padding: 20px;
+    }
+    .overflow-x-auto {
+        overflow-x: auto;
+    }
+    main .item-container-2 table {
+        border-collapse: collapse;
+        width: 100%;
+        margin: 10px 10px;
+    }
+    main .item-container-2 table th, main .item-container-2 table td{
+        padding: 8px;
+        font-size: 15px;
+        text-align: center;
+    }
+    main .item-container-2 table th {
+        background-color: #000000a2;
+        color: #ffffff;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    main .item-container-2 table tfoot {
+        background-color: #000000a2;
+        color: #ffffff;
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    main .item-container form {
+        padding: 7px 10px;
+    }
+    main .item-container form label {
+        font-size: 14px;
+        font-weight: bold;
+    }
+    main .item-container form input[type=text], main .item-container form input[type=email], main .item-container form input[type=tel], main .item-container form select, main .item-container form textarea {
+        width: 100%;
+        max-height: 100px;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
+}
