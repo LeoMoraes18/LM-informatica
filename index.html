@@ -1,50 +1,111 @@
 <!DOCTYPE html>
-<html lang="pt.br">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="_css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="_css/base.css">
+    <link rel="stylesheet" href="_css/cores.css">
+    <link rel="stylesheet" href="_css/grid.css">
+    <link rel="stylesheet" href="_css/main.css">
+    <link rel="stylesheet" href="_css/normalize.css">
+    <link rel="stylesheet" href="_css/menu.css">
+    <link rel="stylesheet" href="_css/normalize.css">
+    <script src="http://kit.fontawesome.com/2454d969d0.js" crossorigin="anonymous"></script>
     
     <title>LM Infórmatica</title>
 </head>
 <body>
-    <header>
-        
-        <img src="_midias/logo-lm-informatica.svg" alt="Logo da empresa">
-        
-        <nav>
-            <ul>
-                <li>
-                    <a class="active" href="index.html">início</a>
+    <header class="[ header-page pre-load flex ] js-itensHeader">
+       
+        <nav class="[ nav-top pre-load flex ] js-itensHeader">
+            
+            <a class="[ btn btn--nav ] nav-top__btn animate" href="index.html">
+                <img src="_midias/logo-lm-informatica.svg" alt="Logo da empresa">
+            </a>
+
+            <ul class="nav-top__list flex">
+                <li class="list">
+                    <a class="btn btn--nav nav-top__btn" href="index.html">Início</a>
                 </li>
-                <li>
-                    <a href="servicos.html">Serviços</a>
+                <li class="list">
+                    <a class="btn btn--nav nav-top__btn " href="servicos.html">Serviços</a>
                 </li>
-                <li>
-                    <a href="produtos.html">Produtos</a>
+                <li class="list">
+                    <a class="btn btn--nav nav-top__btn " href="produtos.html">Produtos</a>
                 </li>
-                <li>
-                    <a href="sobre.html">Sobre</a>
+                <li class="list">
+                    <a class="btn btn--nav nav-top__btn " href="sobre.html">Sobre</a>
                 </li>
-                <li>
-                    <a href="contato.html">Contato</a>
+                <li class="list">
+                    <a class="btn btn--nav nav-top__btn " href="contato.html">Contato</a>
                 </li>
             </ul>
         </nav>
+
+        <button class="[ header-page__hamburguer ] js-alternador">
+            <span class="[ header-page__hamburguerLine center ] js-hamburguerLine"></span>
+        </button>
+
+        <nav class="[ header-page__nav ] js-menuOffCanva">
+            <ul class="header-page__list">
+                <li>
+                    <a class="header-page__link" href="index.html">Início</a>
+                </li>
+                <li>
+                    <a class="header-page__link" href="servicos.html">Serviços</a>
+                </li>
+                <li>
+                    <a class="header-page__link" href="produtos.html">Produtos</a>
+                </li>
+                <li>
+                    <a class="header-page__link" href="sobre.html">Sobre</a>
+                </li>
+                <li>
+                    <a class="header-page__link" href="contato.html">Contato</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="header-page__content flex">
+            <h1 class="[ header-page__title pre-load] js-itensHeader">LM Informática</h1>
+            
+            <p class="[ header-page__subtitle pre-load] js-itensHeader">A LM Informática conta com os melhores equipamentos e técnicos especializados em hardware e tecnologia da informação e com atendimento personalizado</p>
+        </div>
     </header>
-    <main>
-        <div class="container">
-        <div class="banner">
-            <h1>Assistência técnica especializada em notebook, smartphone e tablet</h1>
-        </div>
-        </div>
-        <div class="container">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, animi aut nobis enim tempora soluta delectus quaerat error neque vitae vel quasi voluptatibus quibusdam excepturi provident voluptate molestiae debitis inventore.</p>
+    <main class="main-content">
+        
+        <div class="main-content__section">
+            <h2 class="main-content__title-lg">Assistência de notebook</h2>
+            <p class="main-content__subtitle">Notebooks estão cada vez mais em uso no mundo corporativo. A maioria das empresas opta por usá-los, pois são mais flexíveis se comparados aos desktops. Com o crescimento do home office, as empresas estão investindo cada vez mais na dinamicidade deste tipo de computador.</p>
+            
+            <p class="main-content__subtitle">Por serem mais versáteis (e mais frágeis) que os desktops, os notebooks precisam de cuidados preventivos e de manutenção de épocas em épocas. Por isso, é importante que se programe periodicamente sua manutenção tais como back up de arquivos, limpeza preventiva e verificação de temperatura.</p>
+           
+            <p class="main-content__subtitle">Esteja atento ao funcionamento de seu computador. <br>
+            Procurando uma assistência técnica de computadores e notebooks? <br>
+            A LM Informática é a empresa certa para você. <br>                
+            Serviços em computadores e notebooks:</p>
+
+            <div class="main-content__grid grid pre-load">
+                <div class="card">
+                    <img class="card__picture" src="_midias/assistencia-notebook.jpeg" alt="assistencia de notebook">
+                </div>
+
+
+            </div>
         </div>
     </main>
     <footer>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia expedita inventore omnis magnam ea illo numquam suscipit nobis voluptate, corporis laboriosam veritatis assumenda eos dolorem harum quidem voluptatum quam necessitatibus.</p>
     </footer>
+
+
+    <script type="module">
+        import App from './_src/main.js'
+
+        App.start()
+    </script>
 </body>
 </html>

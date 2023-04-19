@@ -1,0 +1,163 @@
+/* Reset básico */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{  scroll-behavior: smooth;  }
+
+
+body{      
+    width: 100%;
+    height: 100%;
+    background-color: var(--cor-fundo);
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+
+/* Criando Flex para reuso */
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* Centralizar elementos */
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+
+/* Elementos 'ul' em geral */
+.list{
+    list-style-type: none;
+    display: block;
+}
+
+
+
+
+/* Botões em geral */
+.btn{
+    display: block;
+    text-align: center;
+    text-decoration: none;   
+    padding: 15px 30px;
+    border-radius: 5px;  
+    background: var(--cor-btn);  
+    color: var(--cor-clara);
+    transition: all .3s ease;
+}
+
+.btn:hover{ background: var(--cor-btn-hover);  }
+
+
+.btn--opaco{  background: var(--cor-btn-opaco);  }
+
+.btn--opaco:hover{ background: var(--cor-btn-opaco-hover);  }
+
+
+.btn--nav{  background: transparent;  }
+
+.btn--nav:hover{ background: var(--cor-secundaria);  }
+
+
+
+
+/* Cards em geral */
+.card{
+    width: 100%;
+    height: 363px;        
+    border-radius: 10px;
+    background: var(--cor-card); 
+    box-shadow: 0 5px 10px var(--cor-card-boxshadow) , 0 5px 10px var(--cor-card-boxshadow);
+}
+
+.card__picture{
+    width: 100%;
+    height: 85%;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+}
+
+.card__description{
+    width: 100%;
+    height: 15%;
+    background: var(--cor-clara);
+    border-radius: 0 0 10px 10px;
+    justify-content: flex-start;
+    padding: 0 20px;
+}
+
+.card__icon{
+    color: var(--cor-icone);
+    font-size: 1.5rem;
+    margin-right: 30px;
+}
+.card__subtitle{
+    text-align: left;
+    color: var(--cor-escura);
+}
+
+
+
+
+/* Imagens em geral */
+.picture{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+
+
+
+/* Elementos a que não são botões, somente links. */
+.link{
+    display: block;
+    text-decoration: none;
+    color: var(--cor-primaria);
+    transition: all .3s ease;
+}
+
+.link:hover{  color: var(--cor-terciaria);  }
+
+
+.link--secundario{    
+    display: inline-block;
+    color: var(--cor-clara);    
+}
+
+.link--secundario:hover{  color: var(--cor-btn-hover);  }
+
+
+
+
+/* Ícones */
+.icon{
+    font-size: 1.5rem;
+    color: var(--cor-icone);
+    margin-right: 10px;
+    transition: all .3s ease;
+}
+
+.icon:hover{  color: var(--cor-primaria);  }
+
+
+.icon--secundario{  color: var(--cor-clara);  }
+
+.icon--secundario:hover{  color: var(--cor-btn-hover)  }
