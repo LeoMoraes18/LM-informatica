@@ -1,0 +1,277 @@
+/* reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+}
+
+/* base CSS */
+body {
+    overflow-x: hidden;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #fff;
+}
+
+/* header CSS */
+header {
+    justify-content: center;
+    text-align: center;
+    width: 100vw;
+    min-height: 16vh;
+    text-shadow: #000000 0.1em 0.1em 0.2em;
+}
+
+header img {
+    width: 100vw;
+    display: relative;
+    position: relative;
+}
+
+.container-img {
+    position: relative;
+}
+
+.text-block {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.452);
+    color: rgb(255, 255, 255);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-shadow: #000000 0.1em 0.1em 0.2em;
+    border-radius: 15px;
+}
+
+nav {
+    width: 100vw;
+    min-height: 4vh;
+}
+
+nav ul {
+    background-image: -webkit-linear-gradient(#54545c,#00000067 75%);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+    width: 100vw;
+    height: 40px;
+}
+
+nav a img {
+    margin: 0 auto;
+    display: block;
+    max-width: 16vw;
+}
+
+
+nav ul a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 17px;
+}
+
+nav ul a:hover {
+    background-color: #000000a2;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.active {
+    background-color: #000000a2;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+header h1 {
+    font-size: 2em;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+/* main CSS */
+
+main {
+    width: 100vw;
+    min-height: 70vh;
+    display: grid;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    width: 90vw;
+    min-height: inherit;
+}
+main .item-container {
+    background-color: rgb(219, 218, 223);
+    padding: 20px;
+    margin-bottom: 60px;
+    border-radius: 15px;
+    align-items: center;
+
+}
+
+.item-container iframe {
+    max-width: 100%;
+    border-radius: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.item-container h3 {
+    padding: 8px;
+    text-align: center;
+}
+
+main .item-container-2 {
+    background-color: rgba(219, 218, 223, 0.185);
+    margin-bottom: 60px;
+    align-items: center;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.img-inline-start{
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: inline-start;
+    width: 40vw;
+    padding: 20px;
+}
+
+.img-right {
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    float: right;
+    width: 20vw;
+    padding: 20px;
+}
+
+main .item-container h2 {
+    padding: 8px;
+    text-align: center;
+}
+
+main .item-container p {
+    padding: 7px 10px;
+    text-align: justify;
+}
+
+main .item-container-2 h2{
+    padding: 8px;
+    text-align: center;
+}
+
+main .item-container-2 p {
+    padding: 7px 10px;
+    text-align: justify;
+}
+
+main p {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+.overflow-x-auto {
+    overflow-x: auto;
+}
+
+main .item-container-2 table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 10px;
+}
+
+main .item-container-2 table th, main .item-container-2 table td{
+    padding: 8px;
+    font-size: 15px;
+    text-align: center;
+}
+
+main .item-container-2 table th {
+    background-color: #000000a2;
+    color: #ffffff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+main .item-container-2 table tfoot {
+    background-color: #000000a2;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/* footer CSS */
+
+footer {
+    background-image: -webkit-linear-gradient(#54545c,#00000067 75%);;
+    color: #fff;
+    padding: 20px;
+    width: 100vw;
+    min-height: 14vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main .item-container form {
+    padding: 7px 10px;
+}
+
+main .item-container form label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+main .item-container form input[type=text], main .item-container form input[type=email], main .item-container form input[type=tel], main .item-container form select, main .item-container form textarea {
+    width: 100%;
+    max-height: 100px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+main .item-container form input[type=submit] {
+    width: 100%;
+    border-radius: 5px;
+    background-color: #0e0d4c;
+    color: white;
+    margin: 5px 0;
+    padding: 15px 0;
+    cursor: pointer;
+}
+main .item-container form input[type=submit]:hover {
+    background-color: rgb(38, 36, 143);
+}
+
+footer p {
+    
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+/* Path: _css\style.css */
