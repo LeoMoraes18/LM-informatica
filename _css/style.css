@@ -37,17 +37,17 @@ header img {
 }
 
 .text-block {
+    width: 100vw;
     position: absolute;
+    display: flex;;
+    flex-direction: column;
+    padding-right: 30px;
     bottom: 20px;
-    right: 20px;
     background-color: rgba(0, 0, 0, 0.452);
     color: rgb(255, 255, 255);
-    padding-left: 20px;
-    padding-right: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
     text-shadow: #000000 0.1em 0.1em 0.2em;
-    border-radius: 15px;
 }
 
 nav {
@@ -107,19 +107,21 @@ header p {
 main {
     width: 100vw;
     min-height: 70vh;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding: 20px;
 }
 
 .container {
-    width: 90vw;
-    min-height: inherit;
+    width: 100vw;
+    padding-left: 10px;
+    padding-right: 25px;
 }
+
 main .item-container {
     background-color: rgb(219, 218, 223);
     padding: 20px;
-    margin-bottom: 60px;
+    margin-bottom: 10px;
     border-radius: 15px;
     align-items: center;
 
@@ -140,7 +142,6 @@ main .item-container {
 
 main .item-container-2 {
     background-color: rgba(219, 218, 223, 0.185);
-    margin-bottom: 60px;
     align-items: center;
     padding: 20px;
     border-radius: 15px;
@@ -279,91 +280,13 @@ footer p {
 @media screen and (max-width:800px) {
     nav ul {
         flex-direction: column;
-        height: 30vh;
+        min-height: 30vh;
         width: 100vw;
         background-color: #000000a2;
     }
-    nav ul a {
-        color: #ffffff;
-        text-decoration: none;
-        padding: 10px;
-        font-size: 17px;
-    }
-    nav ul a:hover {
-        background-color: #000000a2;
-        color: #ffffff;
-        border-radius: 5px;
-    }
-    .active {
-        background-color: #000000a2;
-        color: #ffffff;
-        border-radius: 5px;
-    }
-    nav a img {
-        margin: 0 auto;
-        display: block;
-        max-width: 50vw;
-    }
-    .img-inline-start{
-        max-width: 100%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        float: inline-start;
-        width: 100vw;
-        padding: 20px;
-    }
-    .img-right {
-        max-width: 100%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        float: right;
-        width: 100vw;
-        padding: 20px;
-    }
-    .overflow-x-auto {
-        overflow-x: auto;
-    }
-    main .item-container-2 table {
-        border-collapse: collapse;
-        width: 100%;
-        margin: 10px 10px;
-    }
-    main .item-container-2 table th, main .item-container-2 table td{
-        padding: 8px;
-        font-size: 15px;
-        text-align: center;
-    }
-    main .item-container-2 table th {
-        background-color: #000000a2;
-        color: #ffffff;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    main .item-container-2 table tfoot {
-        background-color: #000000a2;
-        color: #ffffff;
-        text-align: center;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    main .item-container form {
-        padding: 7px 10px;
-    }
-    main .item-container form label {
-        font-size: 14px;
-        font-weight: bold;
-    }
-    main .item-container form input[type=text], main .item-container form input[type=email], main .item-container form input[type=tel], main .item-container form select, main .item-container form textarea {
-        width: 100%;
-        max-height: 100px;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
+
+    .text-block {
+        position: relative;
     }
 
 }
