@@ -39,7 +39,7 @@ header img {
 .text-block {
     width: 100vw;
     position: absolute;
-    display: flex;;
+    display: flex;
     flex-direction: column;
     padding-right: 30px;
     bottom: 20px;
@@ -55,7 +55,23 @@ nav {
     min-height: 4vh;
 }
 
-nav ul {
+.navbar {
+    position: fixed;
+    padding: 0;
+    top: 0;
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 80vw;
+  }
+
+.fixed {
+   
+  }
+
+ nav ul {
     background-image: -webkit-linear-gradient(#54545c,#00000067 75%);
     display: flex;
     align-items: center;
