@@ -51,15 +51,17 @@
 
                 <p>preencha o formulario para dúvidas gerais</p>
 
-                <form action="contato.php" method="post">
+                <form action="#" method="post" onsubmit="return validarFormulario()">
                     <label for="nome">Nome:</label>
-                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
                     <label for="email">E-mail:</label>
-                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+                    <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
                     <label for="telefone">Telefone:</label>
-                    <input type="tel" name="telefone" id="telefone" placeholder="Digite seu telefone" required>
+                    <input type="tel" name="telefone" id="telefone" placeholder="Digite seu telefone">
+                    <label for="cpf">CPF:</label>
+                    <input type="text" name="cpf" id="cpf" placeholder="Digite seu CPF">
                     <label for="mensagem">Mensagem:</label>
-                    <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+                    <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
                     <input type="submit" name="enviar" value="Enviar Mensagem">
             </div>
         </div>
@@ -70,4 +72,6 @@
         <h3>LM Informática</h3>
         <p>Desenvolvido por:&nbsp;<strong>Leonardo Oliveira</strong></p>
     </footer>
+    <script src="_javascript/main.js"></script>
+</body>
 </html>
