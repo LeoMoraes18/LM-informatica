@@ -3,9 +3,14 @@ window.onload = function(e) {
     var menu = document.getElementsByClassName('navbar')[0];
 
     document.addEventListener('scroll', function() {
-        if (document.body.scrollTop > offset || document.documentElement.scrollTop > 210){
-            menu.style.position = 'fixed';
+        if (window.innerWidth >= 800) {
+            if (document.body.scrollTop > offset || document.documentElement.scrollTop > offset){
+                menu.style.position = 'fixed';
+            } else {
+                menu.style.position = 'initial';
+            }
         } else {
+            // Restaurar o estilo padrão para telas menores
             menu.style.position = 'initial';
         }
     });

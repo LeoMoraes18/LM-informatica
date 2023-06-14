@@ -34,6 +34,7 @@ header img {
 
 .container-img {
     position: relative;
+
 }
 
 .text-block {
@@ -50,43 +51,28 @@ header img {
     text-shadow: #000000 0.1em 0.1em 0.2em;
 }
 
-nav {
-    width: 100vw;
-    min-height: 4vh;
-}
-
 .navbar {
-    position: fixed;
     padding: 0;
     top: 0;
+    z-index: 999 !important;
 }
 
 .logo {
     display: block;
     margin: 0 auto;
-    max-width: 80vw;
-  }
+    max-width: 40vw;
+}
 
-.fixed {
-   
-  }
-
- nav ul {
-    background-image: -webkit-linear-gradient(#54545c,#00000067 75%);
+nav ul {
+    background-image: -webkit-linear-gradient(#54545c, #00000067 75%);
     display: flex;
+    flex-direction: inherit;
     align-items: center;
     justify-content: space-around;
     list-style: none;
     width: 100vw;
     height: 40px;
 }
-
-nav a img {
-    margin: 0 auto;
-    display: block;
-    max-width: 16vw;
-}
-
 
 nav ul a {
     color: #ffffff;
@@ -107,6 +93,8 @@ nav ul a:hover {
     border-radius: 5px;
 }
 
+
+
 header h1 {
     font-size: 2em;
     font-weight: 300;
@@ -126,6 +114,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    z-index: -999 !important;
 }
 
 .container {
@@ -140,7 +129,6 @@ main .item-container {
     margin-bottom: 10px;
     border-radius: 15px;
     align-items: center;
-
 }
 
 .item-container iframe {
@@ -163,7 +151,7 @@ main .item-container-2 {
     border-radius: 15px;
 }
 
-.img-inline-start{
+.img-inline-start {
     max-width: 100%;
     display: block;
     margin-left: auto;
@@ -193,7 +181,7 @@ main .item-container p {
     text-align: justify;
 }
 
-main .item-container-2 h2{
+main .item-container-2 h2 {
     padding: 8px;
     text-align: center;
 }
@@ -212,13 +200,24 @@ main p {
     overflow-x: auto;
 }
 
+.h1Tabela {
+    text-align: center;
+}
+.tabelaFiltro {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
 main .item-container-2 table {
     border-collapse: collapse;
     width: 100%;
     margin: 10px 10px;
 }
 
-main .item-container-2 table th, main .item-container-2 table td{
+main .item-container-2 table th,
+main .item-container-2 table td {
     padding: 8px;
     font-size: 15px;
     text-align: center;
@@ -238,10 +237,12 @@ main .item-container-2 table tfoot {
     padding-top: 10px;
     padding-bottom: 10px;
 }
+
 /* footer CSS */
 
 footer {
-    background-image: -webkit-linear-gradient(#54545c,#00000067 75%);;
+    background-image: -webkit-linear-gradient(#54545c, #00000067 75%);
+    ;
     color: #fff;
     padding: 20px;
     width: 100vw;
@@ -261,7 +262,11 @@ main .item-container form label {
     font-weight: bold;
 }
 
-main .item-container form input[type=text], main .item-container form input[type=email], main .item-container form input[type=tel], main .item-container form select, main .item-container form textarea {
+main .item-container form input[type=text],
+main .item-container form input[type=email],
+main .item-container form input[type=tel],
+main .item-container form select,
+main .item-container form textarea {
     width: 100%;
     max-height: 100px;
     padding: 12px 20px;
@@ -281,26 +286,31 @@ main .item-container form input[type=submit] {
     padding: 15px 0;
     cursor: pointer;
 }
+
 main .item-container form input[type=submit]:hover {
     background-color: rgb(38, 36, 143);
 }
 
 footer p {
-    
+
     font-size: 1.2em;
     font-weight: 300;
 }
 
 /* Path: _css\style.css */
 
-@media screen and (max-width:800px) {
+@media (max-width:800px) {
     nav ul {
         flex-direction: column;
-        min-height: 30vh;
+        align-items: center;
+        justify-content: center;
         width: 100vw;
-        background-color: #000000a2;
+        height: 180px;
     }
 
+    nav ul li {
+        margin: 4px;
+    }
     .text-block {
         position: relative;
     }

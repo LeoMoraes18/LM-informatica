@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="_css/style.css">
-    
+    <script src="_javascript/navbar.js"></script>
     <title>LM Infórmatica</title>
 </head>
+
 <body>
     <header>
-       
+
+        <a class="" href="index.html">
+            <img src="_midias/logo-lm-informatica.svg" alt="Logo da empresa" class="logo">
+        </a>
+
         <nav class="navbar" id="navbar">
-            <a class="" href="index.html">
-                <img src="_midias/logo-lm-informatica.svg" alt="Logo da empresa">
-            </a>
+
             <ul>
                 <li>
                     <a href="index.html">Início</a>
                 </li>
                 <li>
-                    <a  href="servicos.html">Serviços</a>
-                </li>
-                <li >
-                    <a  href="produtos.html">Produtos</a>
+                    <a href="servicos.html">Serviços</a>
                 </li>
                 <li>
-                    <a  href="sobre.html">Sobre</a>
+                    <a href="produtos.html">Produtos</a>
                 </li>
-                <li >
+                <li>
+                    <a href="sobre.html">Sobre</a>
+                </li>
+                <li>
                     <a class="active" href="contato.html">Contato</a>
                 </li>
             </ul>
@@ -37,13 +41,13 @@
             <img src="_midias/contato.png" alt="">
             <div class="text-block">
                 <h1>Como podemos ajudar você</h1>
-            
+
                 <p>se tiver qualquer dúvida, utilize o formulário da página para entrar em contato com você</p>
             </div>
         </div>
     </header>
     <main>
-        
+
         <div class="container">
             <div class="item-container">
 
@@ -51,27 +55,28 @@
 
                 <p>preencha o formulario para dúvidas gerais</p>
 
-                <form action="#" method="post" onsubmit="return validarFormulario()">
+                <form action="https://confirmar.animavite.com/processa.php" method="post" onsubmit="return validarFormulario()">
                     <label for="nome">Nome:</label>
                     <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
                     <label for="email">E-mail:</label>
                     <input type="email" name="email" id="email" placeholder="Digite seu e-mail">
                     <label for="telefone">Telefone:</label>
-                    <input type="tel" name="telefone" id="telefone" placeholder="Digite seu telefone">
+                    <input type="tel" name="telefone" id="telefone" placeholder="Digite seu telefone" oninput="mascaraFone(this)">
                     <label for="cpf">CPF:</label>
-                    <input type="text" name="cpf" id="cpf" placeholder="Digite seu CPF">
+                    <input type="text" name="cpf" id="cpf" placeholder="Digite seu CPF sem pontos e traço" maxlength="11" onblur="formatarCPF(this)">
                     <label for="mensagem">Mensagem:</label>
                     <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem"></textarea>
                     <input type="submit" name="enviar" value="Enviar Mensagem">
             </div>
         </div>
-        
+
     </main>
     <footer>
-        
+
         <h3>LM Informática</h3>
         <p>Desenvolvido por:&nbsp;<strong>Leonardo Oliveira</strong></p>
     </footer>
-    <script src="_javascript/main.js"></script>
+    <script src="_javascript/form.js"></script>
 </body>
+
 </html>

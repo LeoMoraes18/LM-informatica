@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="_css/style.css">
-
+    <script src="_javascript/navbar.js"></script>
+    
     <title>LM Infórmatica</title>
 </head>
 <body>
     <header>
-       
+
+        <a class="" href="index.html">
+            <img src="_midias/logo-lm-informatica.svg" alt="Logo da empresa" class="logo">
+        </a>
+
         <nav class="navbar" id="navbar">
-            <a class="" href="index.html">
-                <img src="_midias/logo-lm-informatica.svg" alt="Logo da empresa">
-            </a>
+            
             <ul>
                 <li>
                     <a  href="index.html">Início</a>
@@ -59,74 +62,17 @@
 
             <div class="container">
                 <div class="item-container-2">
-                    <h2>Tabela</h2>
+                    <h1 class="h1Tabela">Tabela</h1>
+                    <div class="tabelaFiltro">
+                       
+                        <h2>Produtos</h2>
+                        <input type="text" id="filtro" placeholder="Filtrar" oninput="filtrar()">
+                        <hr>
+                        <ul id="listaProdutos"></ul>
+                    </div>
                     <div class="overflow-x-auto">
-                        <table>
-                            <tr>
-                                <th>Nome</th>
-                                <th>Preço</th>
-                                <th>Descrição</th>
-                            </tr>
-                            <tr>
-                                <td>Capinha</td>
-                                <td>R$ 10,00</td>
-                                <td>Capinha para celular</td>
-                            </tr>
-                            <tr>
-                                <td>Capinha</td>
-                                <td>R$ 10,00</td>
-                                <td>Capinha para celular</td>
-                            </tr>
-                            <tr>
-                                <td>Capinha</td>
-                                <td>R$ 10,00</td>
-                                <td>Capinha para celular</td>
-                            </tr>
-                            <tr>
-                                <td>Capinha</td>
-                                <td>R$ 10,00</td>
-                                <td>Capinha para celular</td>
-                            </tr>
-                            <tr>
-                                <td>Capinha</td>
-                                <td>R$ 10,00</td>
-                                <td>Capinha para celular</td>
-                            </tr>
-                            <tr>
-                                <td>Capinha</td>
-                                <td>R$ 10,00</td>
-                                <td>Capinha para celular</td>
-                            </tr>
-                            <tr>
-                                <td>Capinha</td>
-                                <td>R$ 10,00</td>
-                                <td>Capinha para celular</td>
-                            </tr>
-                            <tr>
-                                <td>Capinha</td>
-                                <td>R$ 10,00</td>
-                                <td>Capinha para celular</td>
-                            </tr>
-                            <tr>
-                                <td>Capinha</td>
-                                <td>R$ 10,00</td>
-                                <td>Capinha para celular</td>
-                            </tr>
-                            <tr>
-                                <td>Capinha</td>
-                                <td>R$ 10,00</td>
-                                <td>Capinha para celular</td>
-                            </tr>
-                            <tr>
-                                <td>Capinha</td>
-                                <td>R$ 10,00</td>
-                                <td>Capinha para celular</td>
-                            </tr>
-                            <tr>
-                                <td>Capinha</td>
-                                <td>R$ 10,00</td>
-                                <td>Capinha para celular</td>
-                            </tr>
+                        <table id="tabelaProdutos">
+                            
                         </table>
                     </div>
                 </div>
@@ -143,5 +89,6 @@
         <h3>LM Informática</h3>
         <p>Desenvolvido por:&nbsp;<strong>Leonardo Oliveira</strong></p>
     </footer>
+    <script src='_javascript/produtos.js'></script>
 </body>
 </html>
