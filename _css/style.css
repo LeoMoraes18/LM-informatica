@@ -200,13 +200,25 @@ main p {
     overflow-x: auto;
 }
 
-.h1Tabela {
-    text-align: center;
+.filtro {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+    background-color: #000000a2;
+    color: #ffffff;
+    font-size: 1.1em;
+    font-weight: 30;
+    text-shadow: #000000 0.1em 0.1em 0.2em;
 }
-.tabelaFiltro {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+
+.filtro input{
+    margin: 5px;
+    border-radius: 15px;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: 30;
 }
 
 
