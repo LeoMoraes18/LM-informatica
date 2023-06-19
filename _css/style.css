@@ -32,6 +32,11 @@ header img {
     position: relative;
 }
 
+.banner {
+    width: 90vw;
+    max-height: 400px !important;
+
+}
 .container-img {
     position: relative;
 
